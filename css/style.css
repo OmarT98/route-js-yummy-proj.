@@ -1,0 +1,49 @@
+/* * Global */
+body {
+  background-color: #0d0d0d;
+  color: #f9f6f6;
+}
+
+i {
+  cursor: pointer;
+}
+
+.meal-pointer {
+  cursor: pointer;
+}
+
+/* & loading screen */
+.loading-screen {
+  z-index: 9999;
+}
+
+/* & Side Bar */
+.side-bar {
+  z-index: 9990;
+}
+
+.nav-tabs {
+  background-color: #0d0d0d;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* & Meals */
+.meal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: 500ms;
+}
+
+.meal:hover .meal-overlay {
+  top: 0;
+}
+
+/* & Search */
+.form-control::placeholder {
+  color: #757575;
+}

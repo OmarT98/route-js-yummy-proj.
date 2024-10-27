@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <!-- * Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- * Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- * Main style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Yummy | JS Proj.</title>
+</head>
+
+<body class="overflow-hidden">
+
+    <div class="loading-screen position-fixed top-0 bottom-0 start-0 end-0 bg-black text-center align-content-center">
+        <i class="fa-solid fa-spinner fa-spin fa-4x"></i>
+    </div>
+
+    <!-- & Side Bar -->
+    <div class="side-bar min-vh-100 d-flex position-fixed top-0 bg-dark">
+        <div class="nav-tabs min-vh-100 p-4 d-flex flex-column justify-content-between ">
+            <div class="nav-links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="displaySearchInput()" class="position-relative py-2 meal-pointer">Search</li>
+                    <li onclick="getMealCategories()" class="position-relative py-2 meal-pointer">Categories
+                    </li>
+                    <li onclick="getMealArea()" class="position-relative py-2 meal-pointer">Area</li>
+                    <li onclick="getMealIngredients()" class="position-relative py-2 meal-pointer">Ingredients</li>
+                    <li onclick="displayContactUs()" class="position-relative py-2 meal-pointer">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div>
+                    Copyright Â© 2019 All Rights <br />
+                    Reserved.
+                </div>
+            </div>
+        </div>
+        <div class="nav-logo bg-white text-black text-center d-flex flex-column justify-content-between py-4 px-2">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <i class="open-icon fa-solid fa-2x fa-align-justify"></i>
+            <div class="d-flex flex-column">
+                <i class="fa-solid fa-globe p-1"></i>
+                <i class="fa-solid fa-share-nodes p-1"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- &Search -->
+    <div class="container w-75">
+        <div id="searchInputs" class="row py-4">
+
+        </div>
+    </div>
+
+
+    <!-- &Meals -->
+    <div class="container">
+        <div id="mealsData" class="row py-5 g-4">
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- &Contact Us -->
+
+
+    <!-- ^ JQ -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- ^ Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ^ Main JS -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
