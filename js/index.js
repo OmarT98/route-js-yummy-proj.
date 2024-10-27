@@ -76,7 +76,7 @@ async function getMealName(qname) {
     `https://www.themealdb.com/api/json/v1/1/search.php?s=${qname}`
   );
   let apiData = await response.json();
-  console.log(apiData.meals);
+  // console.log(apiData.meals);
 
   apiData.meals ? displayMeals(apiData.meals) : null;
   $("#mealsData").fadeIn(500);
@@ -89,7 +89,7 @@ async function getMealFirstLetter(q) {
     `https://www.themealdb.com/api/json/v1/1/search.php?f=${q ? q : "."}`
   );
   let apiData = await response.json();
-  console.log(apiData.meals);
+  // console.log(apiData.meals);
 
   apiData.meals ? displayMeals(apiData.meals) : null;
   if (apiData.meals === null) {
@@ -129,7 +129,7 @@ async function getMealInstructions(instId) {
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${instId}`
   );
   let apiData = await response.json();
-  console.log(apiData.meals[0]);
+  // console.log(apiData.meals[0]);
 
   function displayMealsInstructions(inst) {
     let instHtml = "";
@@ -219,7 +219,7 @@ async function getMealCategories() {
     `https://www.themealdb.com/api/json/v1/1/categories.php`
   );
   let apiData = await response.json();
-  console.log(apiData.categories);
+  // console.log(apiData.categories);
 
   function displayMealsCategories(mealList) {
     let mealHtml = "";
@@ -259,7 +259,7 @@ async function getMealsInCategories(qcategory) {
     `https://www.themealdb.com/api/json/v1/1/filter.php?c=${qcategory}`
   );
   let apiData = await response.json();
-  console.log(apiData);
+  // console.log(apiData);
 
   displayMeals(apiData.meals);
   loadScreenFadeout();
@@ -274,7 +274,7 @@ async function getMealArea() {
     `https://www.themealdb.com/api/json/v1/1/list.php?a=list`
   );
   let apiData = await response.json();
-  console.log(apiData.meals);
+  // console.log(apiData.meals);
 
   function displayMealsArea(areaList) {
     let areaHtml = "";
@@ -305,7 +305,7 @@ async function getMealsInAreas(qarea) {
     `https://www.themealdb.com/api/json/v1/1/filter.php?a=${qarea}`
   );
   let apiData = await response.json();
-  console.log(apiData);
+  // console.log(apiData);
 
   displayMeals(apiData.meals);
   loadScreenFadeout();
@@ -320,7 +320,7 @@ async function getMealIngredients() {
     `https://www.themealdb.com/api/json/v1/1/list.php?i=list`
   );
   let apiData = await response.json();
-  console.log(apiData.meals);
+  // console.log(apiData.meals);
 
   function displayMealsIngredients(ingredientList) {
     let ingredientHtml = "";
@@ -358,7 +358,7 @@ async function getMealsInIngredients(qingredient) {
     `https://www.themealdb.com/api/json/v1/1/filter.php?i=${qingredient}`
   );
   let apiData = await response.json();
-  console.log(apiData);
+  // console.log(apiData);
 
   displayMeals(apiData.meals);
   loadScreenFadeout();
